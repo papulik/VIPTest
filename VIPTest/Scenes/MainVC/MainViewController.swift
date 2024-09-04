@@ -72,8 +72,6 @@ final class MainViewController: UIViewController, MainDisplayLogic {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-        default:
-            break
         }
     }
 }
