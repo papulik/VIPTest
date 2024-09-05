@@ -33,9 +33,6 @@ final class MainRouter: MainRoutingLogic, MainDataPassing {
             
             DetailsConfigurator.configure(viewController: detailVC)
             
-            var detailDataStore = detailVC.router?.dataStore
-            detailDataStore?.characterID = id
-            
             viewController?.navigationController?.pushViewController(detailVC, animated: animated)
         }
     }
